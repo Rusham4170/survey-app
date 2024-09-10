@@ -14,6 +14,51 @@ const surveyData = {
           placeholder: "Placeholder text",
         },
         {
+          "type": "dropdown",
+          "name": "question2",
+          "choices": [
+           "Item 1",
+           "Item 2",
+           "Item 3"
+          ]
+         },
+         {
+          "type": "tagbox",
+          "name": "question1",
+          "choices": [
+           "Item 1",
+           "Item 2",
+           "Item 3"
+          ]
+         },
+        {
+          type: "boolean",
+          name: "question1",
+        },
+        {
+          type: "imagepicker",
+          name: "question2",
+          choices: [
+            {
+              value: "Image 1",
+              imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/lion.jpg",
+            },
+            {
+              value: "Image 2",
+              imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/giraffe.jpg",
+            },
+            {
+              value: "Image 3",
+              imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/panda.jpg",
+            },
+            {
+              value: "Image 4",
+              imageLink: "https://surveyjs.io/Content/Images/examples/image-picker/camel.jpg",
+            },
+          ],
+          imageFit: "cover",
+        },
+        {
           type: "text",
           name: "question1",
           title: { default: "Single line Input with required condition", ar: "أدخل اسمك الأول" },
@@ -48,6 +93,20 @@ const surveyData = {
           rateType: "smileys",
           rateCount: 4,
           rateMax: 4,
+        },
+        {
+          type: "radiogroup",
+          name: "question5",
+          title: "Radio Button question",
+          description: "Select one option",
+          choices: ["Item 1", "Item 2", "Item 3"],
+        },
+        {
+          type: "checkbox",
+          name: "question6",
+          title: "Checkbox question",
+          description: "Select all that apply",
+          choices: ["Item 1", "Item 2", "Item 3"],
         },
       ],
     },
